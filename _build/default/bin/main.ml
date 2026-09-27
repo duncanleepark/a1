@@ -9,12 +9,8 @@ let () =
   let input_filename = Sys.argv.(1) in
   let output_filename = Sys.argv.(2) in
 
-  Printf.printf "Input file: %s\n" input_filename;
-  Printf.printf "Output file: %s\n" output_filename;
-
-  match A1.Generator.read_numbered_lines input_filename with
-  | Ok numbered_lines ->
-      List.iter (fun (line_number, line) -> Printf.printf "%d: %s\n" line_number line) numbered_lines
+  match A1.Generator.generate input_filename output_filename with
+  | Ok () -> ()
   | Error message ->
       Printf.eprintf "%s\n" message;
       exit 1

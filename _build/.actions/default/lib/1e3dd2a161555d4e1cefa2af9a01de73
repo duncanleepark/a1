@@ -1,1 +1,1 @@
-lib/generator.ml: In_channel List
+lib/generator.ml: In_channel List Out_channel Parser Picture Svg
