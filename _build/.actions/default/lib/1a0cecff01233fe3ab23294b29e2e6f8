@@ -1,1 +1,1 @@
-lib/svg.ml: Picture Printf
+lib/svg.ml: Buffer List Picture Printf String

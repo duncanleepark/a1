@@ -1,4 +1,6 @@
-(** Handles command-line arguments, terminal communication, and exit status. *)
+(** Command-line entry point: validates the two file arguments, delegates
+    generation to the library, and reports errors to standard error. Success is
+    silent. *)
 
 let () =
   if Array.length Sys.argv <> 3 then begin
@@ -14,4 +16,3 @@ let () =
   | Error message ->
       Printf.eprintf "%s\n" message;
       exit 1
-

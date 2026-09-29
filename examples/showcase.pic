@@ -1,0 +1,40 @@
+canvas 800 600 white
+
+rectangle 20 20 760 560 cream
+rectangle 28 28 744 544 teal
+
+transform translate 115 105
+  repeat 3 translate 35 0
+    repeat 3 translate 0 35
+      circle 0 0 5 gold
+    end
+  end
+end
+
+transform translate 400 275
+  circle 0 0 82 teal
+  circle 0 0 15 gold
+
+  repeat 12 rotate 30
+    line 0 -96 0 -155 cream 3
+    circle 0 -166 7 gold
+    transform translate 0 -122
+      transform scale 0.65
+        rectangle -12 -12 24 24 orange
+      end
+    end
+  end
+
+  transform rotate 15
+    repeat 4 rotate 90
+      transform translate 0 -58
+        circle 0 0 10 red
+        line -18 0 18 0 white 2
+      end
+    end
+  end
+end
+
+line 120 475 680 475 cream 2
+text 400 525 28 cream Duncan Park
+text 400 555 14 gold CS 3110 - A1
